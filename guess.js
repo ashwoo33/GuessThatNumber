@@ -60,6 +60,9 @@ while (restartGame){
         while (!guess || guess < 1 || guess > rangeNum){
         guess = parseInt(prompt(`Please enter a number from 1 to ${rangeNum}`));
         }
+
+        // Removes an attempt
+        attempts--;
         break;
     }
 
